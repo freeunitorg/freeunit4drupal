@@ -1,0 +1,10 @@
+freeunit.settings:
+  title: 'FreeUnit'
+  description: 'Post-response queue and cron work on the detached request.'
+  route_name: freeunit.settings
+  parent: system.admin_config_development
+freeunit.status:
+  title: 'FreeUnit'
+  description: 'Runtime mode and the server configuration.'
+  route_name: freeunit.status
+  parent: system.admin_reports

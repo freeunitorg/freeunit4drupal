@@ -1,0 +1,4 @@
+freeunit.settings:
+  route_name: freeunit.settings
+  title: 'Settings'
+  base_route: freeunit.status

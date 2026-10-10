@@ -1,0 +1,6 @@
+post_response:
+  enabled: true
+  budget_ms: 2000
+  queues: []
+  cron: false
+control_socket: /run/control.unit.sock

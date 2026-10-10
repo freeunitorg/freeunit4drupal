@@ -1,0 +1,7 @@
+administer freeunit:
+  title: 'Administer FreeUnit'
+  description: 'Configure post-response queue and cron work and the control socket.'
+  restrict access: true
+view freeunit status:
+  title: 'View FreeUnit status'
+  description: 'See the runtime mode and the running server configuration.'

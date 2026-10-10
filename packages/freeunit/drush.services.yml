@@ -1,0 +1,8 @@
+services:
+  freeunit.commands:
+    class: Drupal\freeunit\Command\FreeUnitStatusCommand
+    arguments:
+      - '@freeunit.unit_client'
+      - '@state'
+    tags:
+      - { name: drush.command }

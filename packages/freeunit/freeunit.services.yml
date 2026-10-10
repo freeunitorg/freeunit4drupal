@@ -1,0 +1,17 @@
+services:
+  logger.channel.freeunit:
+    parent: logger.channel_base
+    arguments: ['freeunit']
+
+  freeunit.post_response_worker:
+    class: Drupal\freeunit\PostResponse\Worker
+    arguments:
+      - '@config.factory'
+      - '@plugin.manager.queue_worker'
+      - '@lock'
+      - '@state'
+      - '@logger.channel.freeunit'
+
+  freeunit.unit_client:
+    class: Drupal\freeunit\Status\UnitClient
+    arguments: ['@config.factory']

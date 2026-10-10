@@ -1,0 +1,31 @@
+{
+    "name": "freeunitorg/freeunit",
+    "description": "Drupal integration for the FreeUnit application server: a Symfony Runtime runner, post-response queue and cron work on the detached request, and a control-API status command.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://github.com/freeunitorg/freeunit4drupal",
+    "keywords": ["Drupal", "FreeUnit", "Unit", "performance", "runtime"],
+    "require": {
+        "php": ">=8.1",
+        "symfony/runtime": "^7.4 || ^8.0"
+    },
+    "require-dev": {
+        "drupal/core": "^11.4 || ^12",
+        "drush/drush": "^12 || ^13"
+    },
+    "autoload": {
+        "psr-4": {
+            "Drupal\\freeunit\\": "src/"
+        }
+    },
+    "extra": {
+        "drush": {
+            "services": {
+                "drush.services.yml": "^11 || ^12 || ^13"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

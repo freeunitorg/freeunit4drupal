@@ -1,0 +1,15 @@
+freeunit.settings:
+  path: '/admin/config/development/freeunit'
+  defaults:
+    _form: '\Drupal\freeunit\Form\SettingsForm'
+    _title: 'FreeUnit'
+  requirements:
+    _permission: 'administer freeunit'
+
+freeunit.status:
+  path: '/admin/reports/freeunit'
+  defaults:
+    _controller: '\Drupal\freeunit\Controller\StatusController::report'
+    _title: 'FreeUnit'
+  requirements:
+    _permission: 'view freeunit status'

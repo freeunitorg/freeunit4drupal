@@ -1,0 +1,26 @@
+freeunit.settings:
+  type: config_object
+  label: 'FreeUnit settings'
+  mapping:
+    post_response:
+      type: mapping
+      label: 'Post-response work'
+      mapping:
+        enabled:
+          type: boolean
+          label: 'Drain queues and run cron after the response'
+        budget_ms:
+          type: integer
+          label: 'Budget in milliseconds'
+        queues:
+          type: sequence
+          label: 'Queue worker plugin ids'
+          sequence:
+            type: string
+            label: 'Queue worker plugin id'
+        cron:
+          type: boolean
+          label: 'Run hook_cron()'
+    control_socket:
+      type: string
+      label: 'FreeUnit control socket path'

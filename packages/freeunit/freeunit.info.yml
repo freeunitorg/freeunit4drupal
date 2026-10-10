@@ -1,0 +1,6 @@
+name: FreeUnit
+type: module
+description: 'FreeUnit application-server integration: a Symfony Runtime runner, post-response queue and cron work, and a control-API status report.'
+package: Performance
+core_version_requirement: ^11.5 || ^12
+configure: freeunit.settings
